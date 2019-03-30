@@ -67,21 +67,23 @@
 
 <?php include "templates/header.php"; ?>
 
-<?php if (isset($_POST['submit']) && $statement) : ?>
-	<p>Work successfully updated.</p>
-<?php endif; ?>
+<div class="jumbotron"><h2>Edit Shed Data</h2></div>
 
-<h2>Edit Data</h2>
+<?php if (isset($_POST['submit']) && $statement) : ?>
+<div class="alert alert-success">
+  <strong>Success!</strong> Entry sucessfully updated.
+</div>
+<?php endif; ?>
 
 <form method="post">
     
-    ID = <?php echo escape($mealrecording['id']); ?><br>
+    ID = <?php echo escape($mealrecording['id']); ?><br><br>
     
-    <label for="sheddate">Shed Date Recorded</label>
-    <input type="date" name="sheddate" id="sheddate" value="<?php echo escape($shedrecording['sheddate']); ?>">
+    <label for="sheddate"><b>Shed Date</b></label><br>
+    <input type="date" name="sheddate" id="sheddate" class="form-control" value="<?php echo escape($shedrecording['sheddate']); ?>"><br>
 
 
-    <input type="submit" name="submit" value="Save">
+    <input type="submit" name="submit" class= "btn btn-outline-secondary" value="Save">
 
 </form>
 

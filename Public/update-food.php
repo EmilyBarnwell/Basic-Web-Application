@@ -69,23 +69,26 @@
 
 <?php include "templates/header.php"; ?>
 
-<?php if (isset($_POST['submit']) && $statement) : ?>
-	<p>Work successfully updated.</p>
-<?php endif; ?>
 
-<h2>Edit Data</h2>
+<div class="jumbotron"><h2>Edit Food Entries</h2></div>
+
+<?php if (isset($_POST['submit']) && $statement) : ?>
+<div class="alert alert-success">
+  <strong>Success!</strong> Entry sucessfully updated.
+</div>
+<?php endif; ?>
 
 <form method="post">
     
-    ID = <?php echo escape($mealrecording['id']); ?><br>
+    ID = <?php echo escape($mealrecording['id']); ?><br><br>
     
-    <label for="foodtype">Food Type</label>
-    <input type="text" name="foodtype" id="foodtype" value="<?php echo escape($mealrecording['foodtype']); ?>">
+    <label for="foodtype"><b>Food Type</b></label><br>
+    <input type="text" name="foodtype" class="form-control" id="foodtype" value="<?php echo escape($mealrecording['foodtype']); ?>"><br>
 
-    <label for="fooddate">Date Eaten</label>
-    <input type="date" name="fooddate" id="fooddate" value="<?php echo escape($mealrecording['fooddate']); ?>">
+    <label for="fooddate"><b>Date Eaten</b></label><br>
+    <input type="date" name="fooddate" class="form-control" id="fooddate" value="<?php echo escape($mealrecording['fooddate']); ?>"><br>
 
-    <input type="submit" name="submit" value="Save">
+    <input type="submit" class= "btn btn-outline-secondary" name="submit" value="Save">
 
 </form>
 

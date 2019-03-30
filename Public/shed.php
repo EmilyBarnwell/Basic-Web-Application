@@ -23,18 +23,25 @@ if (isset($_POST['submit'])) {
 }
 ?>
 
-<h2>Record Last Shed</h2>
+<div class="jumbotron"><h2>Shed Recordings</h2>
+    Snakes shed a lot as they grow! It's important to monitor when your snake sheds; it's a good way to tell if they are healthy or not!</div>
 
 <?php if (isset($_POST['submit']) && $statement) { ?>
-<p>Work successfully added.</p>
+<div class="alert alert-success">
+  <strong>Success!</strong> Entry Sucessfully added.
+</div>
 <?php } ?>
 
+<div class="form-group row">
 <form method="post">
-    <label for="sheddate">Shed Date</label>
-<input type="date" name="sheddate" id="sheddate"><br><br>
+    <div class="col-xs-2">
+    <label for="sheddate">Shed Date</label><br>
+    When was the date of your snake's last shed?<br>
+            <div class="col-xs-2">
+<input type="date" class="form-control" name="sheddate" id="sheddate"><br><br>
     
-        <input type="submit" name="submit" value="Submit">
-
+        <input type="submit" class= "btn btn-outline-secondary" name="submit" value="Submit">
+    </div>
 </form>
 
 <?php include "templates/footer.php"; ?>

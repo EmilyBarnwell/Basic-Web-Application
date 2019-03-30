@@ -50,8 +50,6 @@
 <?php include "templates/header.php"; ?>
 
 
-<h2>Delete an Entry</h2>
-
 <?php if ($success) echo $success; ?>
 
 <!-- This is a loop, which will loop through each result in the array -->

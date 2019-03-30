@@ -21,7 +21,11 @@
 
 <?php include "templates/header.php"; ?>
 
-        <h2>Meal Data</h2>
+<div class="jumbotron"><h2>Snake Data!</h2>
+Here is all the snake data you've recorded, isn't it impressive? Here you can edit and delete any entries that you've made!</div>
+
+
+<h3>Meal Data</h3>
 
             <?php 
                   foreach($result as $row) { 
@@ -68,7 +72,7 @@
 ?>
 
 
-        <h2>Shed Data</h2>
+        <h3>Shed Data</h3>
 
             <?php 
                   foreach($result as $row) { 
@@ -113,7 +117,7 @@
 ?>
 
 
-        <h2>Weight Data</h2>
+        <h3>Weight Data</h3>
 
             <?php 
                   foreach($result as $row) { 
