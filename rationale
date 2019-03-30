@@ -1,0 +1,15 @@
+Rationale 
+Emily Barnwell
+
+
+During my development of assignment 1’s Basic Web Application, I learned quite a few new things, and brushed up on a few of my earlier learnings as well.
+
+Going through all of the moduels on Cavas again was a lot easier compared to the first time when we went through the content in class— I found that I was able to experiment more with what I had learned, which eventually lead to me creating three tables to store data instead of just one. I also found it worthwhile to play around with some of the variable fields in order to achieve more desired results— I was happy that I was able to find a nice way for dates to be entered into my database. I would have liked to learn how to do drop-down menus as it would have fit some of my fields, however it might just simply be something I’ll have to try next time.
+
+Working out the log-in system was the most challenging part of the process. I ended up watching a lengthy Youtube tutorial (as seen here) that helped me through the process. I appreciated how informative the tutorial was. I ended up writing the code from scratch and listening along to make sure I actually understood what the code was saying. I don’t believe I have a strong grasp on PHP language yet, but I’m definitely making more sense of it as it’s explained to me time and time again.
+
+The CSS styling was something I was more familiar with when it came to this assignment, and I had fun utilizing bootstrap in order to make my website look more appealing. I didn’t end up deviating much from what bootstrap provided, however I found that simply utilizing what it had to offer was more than enough. I would have liked to add more of my own flair to the website, as while it is very neat, it’s also very bland, and could use with more decoration.
+
+Getting my website up online was one of the hardest parts for me. I found my files became all messy as I had to transfer them over onto a web server, and I feel as if I had more time and patience, I would have tried to sort my files out a little better.
+
+Overall, I had fun with this assignment— I feel there is more I could have done, but I’m happy with my results so far.
